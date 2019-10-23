@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="4">
+
+  <testsuite name="kslTests"
+    errors="0" failures="0" hostname="" id="" package="kslTests" skipped="0"
+    tests="4" time="70.70" timestamp="">
+  
+    <testcase name="Login" classname="kslTests" time="21.05" assertions="8">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Item Search by Keyword" classname="kslTests" time="9.203" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Item Search by Filter" classname="kslTests" time="10.98" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Save/Delete Items from Favorites" classname="kslTests" time="29.47" assertions="10">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

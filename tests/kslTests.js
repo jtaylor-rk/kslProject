@@ -45,7 +45,10 @@ module.exports = {
                 .saveListing('1')
                 .navToFavorites()
                 .verify.elementPresent('@savedListing')
+                .api.pause(2000)
+            page
                 .deleteListing('1')
                 .verify.elementNotPresent('@savedListing')
+                .api.pause(2000)
     }
 }

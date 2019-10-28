@@ -19,12 +19,13 @@ module.exports = {
         filterDistance: '.searchForm-selectDropdown option[value="50"]',
         //Login and Logout selectors
         accountIcon: { selector: '//button[@class="ksl-header-account-toggle__icon"]', locateStrategy: 'xpath' },
-        loginButton: '[class*="login"]',
+        loginButton: '[class*=login-button]',
         emailInput: '#memberemail',
         passInput: '#memberpassword',
         submitLogin: '.continue',
         welcome: '[class*="welcome"]',
-        logoutButton: '[class*="logout"]',
+        logoutButton2: '[class*="logout-button"]',
+        logoutButton: {selector: '//a[contains(text(), "Logout")]', locateStrategy: 'xpath'},
         //Keyword Search
         keywordInput: '[name="keyword"]',
         homeSearch: '[class*="submitSearchButton"]',
@@ -41,7 +42,7 @@ module.exports = {
                     .waitForElementPresent('@accountIcon')
                     .click('@accountIcon')
                     .click('@loginButton')
-                    .waitForElementPresent('@emailInput')
+                    .waitForElementPresent('@emailInput', 20000)
                     .clearValue('@emailInput')
                     .setValue('@emailInput', loginInfo.user)
                     .clearValue('@passInput')
